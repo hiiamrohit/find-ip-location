@@ -43,16 +43,7 @@ if(isset($_REQUEST['ip'])) {
 </head>
 <body>
 <div>
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- ad-res-iamrohit -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6645541031569203"
-     data-ad-slot="4945816577"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+
 <h1>Find IP Address Location</h1>
 <p>Simple and fast online program to find ip address details. </p>
 <form action="">

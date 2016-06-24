@@ -22,8 +22,10 @@ function ipInfo($ip) {
 
 if(isset($_REQUEST['ip'])) {
 	$data = ipInfo($_REQUEST['ip']);
+  $uIp = $_REQUEST['ip'];
 } else {
 	$data = ipInfo($_SERVER['REMOTE_ADDR']);
+   $uIp = $_SERVER['REMOTE_ADDR'];
 }
 
 ?>
@@ -49,7 +51,7 @@ if(isset($_REQUEST['ip'])) {
 <form action="">
 <div>
 		<p>Enter IP Address</p>
-		<p><input name="ip" required="required" value="<?= $_SERVER['REMOTE_ADDR'] ?>" /></p>
+		<p><input name="ip" required="required" value="<?= $uIp ?>" /></p>
 		
 		<p><input type="submit" value="Submit" id="qr-gn"></p>
 </div>
@@ -108,5 +110,4 @@ google.maps.event.addDomListener(window, 'load', initialize);
 </script>
 </body>
 </html>
-
 
